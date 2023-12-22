@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Customer Survey Form</title>
+        <link rel="stylesheet" href="surveyStyle.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <div class="title">
+                <p>Customer Survey Form</p>
+            </div>
+
+            <form id="surveyForm">
+
+                <label for="firstName" class="required-star">First Name:</label>
+                <input type="text" id="firstName" placeholder="Please Enter Last Name" required>
+
+                <label for="lastName" class="required-star">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Please Enter Last Name" required>
+
+                <label for="dob" class="required-star">Date of Birth:</label>
+                <input type="date" id="dob" required>
+
+                <label for="country" class="required-star">Country:</label>
+                <select id="country" required>
+                    <option value="Australia">Australia</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="China">China</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="France">France</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="India">India</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Russia">Russia</option>
+                    <option value="S Africa">South Africa</option>
+                    <option value="USA">USA</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                </select>
+
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <label for="profession" class="required-star">Profession:</label>
+                <input type="text" id="profession" placeholder="Please Enter Profession" required>
+
+                <label for="email" class="required-star">Email Id:</label>
+                <input type="email" id="email" placeholder="xyz@gmai.com" required>
+
+                <label for="mobile" class="required-star">Contact Number:</label>
+                <input type="tel" id="mobile" placeholder="71******54" required>
+
+                <button type="submit" onclick="submitForm()">Submit</button>
+                <button type="submit" onclick="resetForm()">Reset</button>
+            </form>
+        </div>
+        <script src="surveyScript.js"></script>
+    </body>
+</html>
