@@ -9,9 +9,7 @@ function submitForm() {
     const mobile = document.getElementById('mobile').value;
   
     if (validateForm(firstName, lastName, dob, profession, email, mobile)) {
-      const popupMsg = `First Name: ${firstName}\nLast Name: ${lastName}\n
-              Date of Birth: ${dob}\nCountry: ${country}\nGender: ${gender}\n
-              Profession: ${profession}\nEmail id: ${email}\nContact Number: ${mobile}`;
+      const popupMsg = `First Name: ${firstName}\nLast Name: ${lastName}\nDate of Birth: ${dob}\nCountry: ${country}\nGender: ${gender}\nProfession: ${profession}\nEmail id: ${email}\nContact Number: ${mobile}`;
   
       alert(popupMsg);
       resetForm();

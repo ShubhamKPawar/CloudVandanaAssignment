@@ -1,12 +1,10 @@
 *{
-    margin: 3px;
     box-sizing: border-box;
     font-family: 'Poppins';
-    padding: 0;
 }
 
 .wrapper-container{
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
 }
